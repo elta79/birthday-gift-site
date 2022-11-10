@@ -1,0 +1,192 @@
+:root {
+    --color-heart: red;
+}
+
+body {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    background: linear-gradient(#9A7197, #5796C1);
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+#bff-img {
+    width: 150px;
+    /* border-radius: 50%; */
+    border: 6px solid #5796C1;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: #5796C1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #5796C1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("images/happy.gif");
+}
+
+#gift-img-excited:hover {
+    background-image: url("images/excited.gif");
+}
+
+#gift-img-amazed:hover {
+    background-image: url("images/amazed.gif");
+}
+
+#gift-img-fireworks:hover {
+    background-image: url("images/fireworks.webp");
+}
+
+#gift-img-miss:hover {
+    background-image: url("images/miss.webp");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+#hearts-gran {
+    bottom: 33%;
+    left: 40%;
+}
+
+.hearts {
+    width: 5%;
+    min-width: 100px;
+    height: 25%;
+    min-height: 300px;
+    position: absolute;
+    z-index: 10
+}
+
+.heart {
+    background-color: var(--color-heart);
+    position: absolute;
+    height: 20%;
+    min-height: 15px;
+    width: 20%;
+    min-width: 15px;
+    opacity: 0;
+    -webkit-mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>');
+          mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>');
+    -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+          mask-position: bottom;
+    animation: floating-heart 10s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+
+.heart:nth-child(1) {  
+  animation-delay: 1s;
+}
+
+.heart:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.heart:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+.heart:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+@keyframes floating-heart {
+  0% {
+    opacity: 0;
+    bottom: 0%;
+    left: 0%;
+  }
+  10% {
+    opacity: 1;
+    bottom: 20%;
+    left: 70%;
+  }
+  20% {
+    bottom: 40%;
+    left: 10%;
+  }
+  30% {
+    bottom: 60%;
+    left: 50%;
+  }
+  40% {
+    opacity: 1;
+    bottom: 80%;
+    left: 5%;
+  }
+  48% {
+    opacity: 0;
+    bottom: 100%;
+    left: 60%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 100%;
+    left: 90%;
+  }
+}
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/
